@@ -33,8 +33,12 @@ Para la realización de dichas tareas, se incluye en la carpeta de esta práctic
 Estructura de la carpeta
 ```
 P2
-|- mandril.jpg                          #Imagen base para las tareas 1 y 2
-|- musica.mp3                           #Música controlada en la tarea 3
-|- README.md                            #Descripción de la solución a las tareas
-|- VC_P2.ipynb                          #Cuaderno jupyter con tareas desarrolladas
+|- AmpliacionTarea2_P2.mp4    #Video demostracion de la ampliacion de la tarea 2
+|- mandril.jpg                #Imagen base para las tareas 1 y 2
+|- musica.mp3                 #Música controlada en la tarea 3
+|- README.md                  #Descripción de la solución a las tareas
+|- ResusltadoTarea1_P2.png    #Imagen del resultado de la tarea 1
+|- ResusltadoTarea2_P2.png    #Imagen del resultado de la tarea 2
+|- ResusltadoTarea3_P2.mp4    #Video del resultado de la tarea 3
+|- VC_P2.ipynb                #Cuaderno jupyter con tareas desarrolladas
 ```

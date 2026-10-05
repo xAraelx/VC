@@ -49,14 +49,16 @@ Para el conteo se ha creado la función genérica `getBorderDataBy(gray, img, fa
 | Filas `>= 0.9*maxfil` | 7 |
 | Índices | 6, 12, 15, 20, 21, 88, 100 |
 
-Las filas destacadas corresponden a la frente (pelaje con mucha textura) y a la línea de los ojos. Además, se muestra una gráfica con el porcentaje de píxeles blancos de cada fila.
+![Resultado Tarea 1](ResultadoTarea1_P2.png)
+
+
+Las filas destacadas corresponden a la frente (pelaje con mucha textura) y por debajo de la línea de los ojos. Además, se muestra una gráfica con el porcentaje de píxeles blancos de cada fila.
 
 ## Tarea 2 — Umbralizado de Sobel y comparación con Canny
 
 La función `getBorders(img, valorUmbral)` calcula para una imagen:
 
 - **Canny** con umbrales 100 y 200.
-- **Sobel**: suavizado gaussiano 3×3, derivadas en x e y (`cv2.Sobel` en `CV_64F`), suma de ambas y conversión a 8 bits con `cv2.convertScaleAbs`.
 - **Sobel umbralizado** con `cv2.threshold(sobel8, valorUmbral, 255, cv2.THRESH_BINARY)`.
 
 A continuación, `getBorderData(img, factor)` reutiliza `getBorderDataBy` para contar por filas y por columnas, y `showBorderData` muestra los índices y la imagen con las filas (rojo) y columnas (verde) destacadas.
@@ -68,6 +70,8 @@ A continuación, `getBorderData(img, factor)` reutiliza `getBorderDataBy` para c
 | Canny | 7 | 6, 12, 15, 20, 21, 88, 100 | 19 | 67–123 (13 col.), 379–403 (6 col.) |
 | Sobel umbralizado | 4 | 3, 8, 82, 83 | 5 | 104, 105, 127, 287, 288 |
 
+![Resultado Tarea 1](ResultadoTarea2_P2.png)
+
 **Comparación:**
 - Canny produce bordes finos (1 píxel) y continuos gracias a la supresión de no máximos y la histéresis. Sobel umbralizado produce bordes más gruesos y fragmentados.
 - Sobel es más sensible a la textura del pelaje y depende mucho del umbral elegido.
@@ -75,6 +79,9 @@ A continuación, `getBorderData(img, factor)` reutiliza `getBorderDataBy` para c
 - Ambos métodos coinciden en las filas de la frente y de los ojos. En columnas, Canny marca más posiciones, agrupadas en los laterales del pelaje.
 
 Por último, hay un **demostrador en vivo con la cámara** que muestra un collage 2×2 con la imagen original, Canny, Sobel y Sobel umbralizado, todos con sus filas y columnas destacadas. Las barras *Umbral* y *Factor* permiten ajustar los parámetros en tiempo real. Se sale con `ESC` o `q`.
+
+
+▶ [Ver vídeo de la demostración en vivo](AmpliacionTarea2_P2.mp4)
 
 ## Tarea 3 — Demostrador: control de la música con las manos
 
@@ -101,6 +108,8 @@ El audio se carga en memoria con `soundfile` y se reproduce en bucle con `soundd
 | `r` | Restaurar el rango inicial |
 | `v` | Alternar entre la cámara y la máscara de piel |
 | `q` / `ESC` | Salir |
+
+▶ [Ver vídeo de la demostración de la tarea 3](ResultadoTarea3_P2.mp4)
 
 ------
 
