@@ -80,8 +80,10 @@ A continuación, `getBorderData(img, factor)` reutiliza `getBorderDataBy` para c
 
 Por último, hay un **demostrador en vivo con la cámara** que muestra un collage 2×2 con la imagen original, Canny, Sobel y Sobel umbralizado, todos con sus filas y columnas destacadas. Las barras *Umbral* y *Factor* permiten ajustar los parámetros en tiempo real. Se sale con `ESC` o `q`.
 
+▶ [Ver vídeo de la demostración de la ampliación tarea 2 (YouTube)](https://youtu.be/xV2-gCCpJ0gE)
 
-▶ [Ver vídeo de la demostración en vivo](AmpliacionTarea2_P2.mp4)
+📥 [Descargar vídeo](AmpliacionTarea2_P2.mp4)
+
 
 ## Tarea 3 — Demostrador: control de la música con las manos
 
@@ -109,7 +111,9 @@ El audio se carga en memoria con `soundfile` y se reproduce en bucle con `soundd
 | `v` | Alternar entre la cámara y la máscara de piel |
 | `q` / `ESC` | Salir |
 
-▶ [Ver vídeo de la demostración de la tarea 3](ResultadoTarea3_P2.mp4)
+▶ [Ver vídeo de la demostración de la Tarea 3 (YouTube)](https://youtube.com/shorts/-0ec3Tz8ElE)
+
+📥 [Descargar vídeo](ResultadoTarea3_P2.mp4)
 
 ------
 
