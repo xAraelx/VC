@@ -12,10 +12,14 @@ Este repositorio contiene el cuaderno `VC_P2.ipynb`, con tres ejercicios sobre d
 
 ```
 P2
-|- mandril.jpg     # Imagen utilizada en las tareas 1 y 2
-|- musica.mp3      # Música que se controla en la tarea 3
-|- README.md
-|- VC_P2.ipynb     # Cuaderno Jupyter con las tareas desarrolladas
+|- AmpliacionTarea2_P2.mp4    #Video demostracion de la ampliacion de la tarea 2
+|- mandril.jpg                #Imagen base para las tareas 1 y 2
+|- musica.mp3                 #Música controlada en la tarea 3
+|- README.md                  #Descripción de la solución a las tareas
+|- ResusltadoTarea1_P2.png    #Imagen del resultado de la tarea 1
+|- ResusltadoTarea2_P2.png    #Imagen del resultado de la tarea 2
+|- ResusltadoTarea3_P2.mp4    #Video del resultado de la tarea 3
+|- VC_P2.ipynb                #Cuaderno jupyter con tareas desarrolladas
 ```
 
 ## Recursos necesarios
