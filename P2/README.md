@@ -105,6 +105,8 @@ Tomando como inspiración *Virtual air guitar* y *Messa di voce*, se propone un 
 
 El audio se carga en memoria con `soundfile` y se reproduce en bucle con `sounddevice`. En el *callback* se avanza por las muestras a la velocidad actual, interpolando linealmente entre ellas.
 
+El código del audio se desarrolló con ayuda de Claude: [conversación con Claude](https://claude.ai/share/c30abf0d-8d17-42cc-a46a-0f5d5610e200).
+
 **Controles:**
 
 | Tecla | Acción |
