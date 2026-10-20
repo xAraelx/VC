@@ -153,3 +153,5 @@ Las cajas de una misma clase que se solapan mucho se unen, y las que solo se roz
 - [SMACC: A System for Microplastics Automatic Counting and Classification](https://doi.org/10.1109/ACCESS.2020.2970498)
 - [Documentación de OpenCV](https://docs.opencv.org/)
 - [Métricas de clasificación (scikit-learn)](https://scikit-learn.org/stable/modules/model_evaluation.html)
+- [Resumen del proceso de obtención del código de detección de dinero (chat con Claude)](https://claude.ai/share/4c98ada4-249f-490d-aff2-53c6ff5770ee)
+- [Resumen del proceso de obtención del código de detección de microplásticos (chat con Claude)](https://claude.ai/share/3eaf0d5c-c24d-41e8-8571-4c344c4986ab)
