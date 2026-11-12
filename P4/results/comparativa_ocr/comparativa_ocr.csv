@@ -1,0 +1,3 @@
+OCR,Matrículas,Acierto exacto (%),≤ 1 error (%),CER medio,Sin lectura (%),Errores del OCR (%),En lote (ms/matrícula),Matrículas/s (lote),Latencia media (ms),Latencia std (ms),Latencia mediana (ms),Acierto 40-70 px (%),Acierto 70-110 px (%),Acierto > 110 px (%)
+Tesseract (clásico),726,34.022,46.143,0.425,26.722,0.0,181.159,5.52,271.336,26.243,267.827,10.526,24.545,40.307
+PaddleOCR-VL (VLM),726,75.344,85.813,0.087,1.928,0.0,680.484,1.47,703.263,246.359,667.745,52.632,69.091,80.806

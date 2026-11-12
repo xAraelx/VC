@@ -1,0 +1,11 @@
+clase,direccion,total
+bicycle,izquierda,1
+bus,izquierda,2
+car,derecha,4
+car,izquierda,20
+car,sin determinar,103
+motorcycle,izquierda,3
+person,derecha,12
+person,izquierda,8
+person,sin determinar,34
+truck,sin determinar,2
