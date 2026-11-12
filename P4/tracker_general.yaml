@@ -1,0 +1,17 @@
+# BoT-SORT para personas y vehículos, con ReID (apariencia) activada
+tracker_type: botsort
+track_high_thresh: 0.25   # detecciones por encima: se asocian en la 1ª ronda
+track_low_thresh: 0.1     # detecciones débiles: se usan en la 2ª ronda para no perder tracks
+new_track_thresh: 0.5     # confianza mínima para crear un ID nuevo (más alto = menos IDs nuevos espurios)
+track_buffer: 600          # frames que se "recuerda" un objeto perdido (≈3 s a 30 fps)
+match_thresh: 0.85        # más alto = asociación más permisiva
+fuse_score: True
+
+# Compensación de movimiento de cámara
+gmc_method: sparseOptFlow
+
+# Re-identificación por apariencia: recupera el ID tras oclusiones
+proximity_thresh: 0.5
+appearance_thresh: 0.25
+with_reid: True
+model: auto               # usa las features del propio detector (sin modelo extra)

@@ -1,0 +1,37 @@
+# ---------------- Python y Jupyter ----------------
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# ---------------- Sistema y editores ----------------
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# ---------------- Vídeos (demasiado grandes: van enlazados en el README) ----------------
+*.mp4
+*.MP4
+*.avi
+*.mov
+
+# ---------------- Pesos que se descargan solos ----------------
+# yolo11n.pt, yolo11s.pt, rtdetr-l.pt... en la raíz (Ultralytics los descarga si faltan)
+/*.pt
+# Pesos COCO del repositorio oficial de RT-DETR (los descarga load_rtdetr / asegurar_pesos_coco)
+weights/
+
+# ---------------- Dataset ----------------
+# Las imágenes van enlazadas en el README; las etiquetas YOLO se regeneran con la sección 1
+datos/images/
+datos/labels/
+*.cache
+
+# ---------------- Entrenamientos ----------------
+# Se suben best.pt / best.pth y las curvas; el último checkpoint no hace falta
+runs/**/last.pt
+runs/**/last.pth
+runs/**/checkpoint*.pth
+# Registros de TensorBoard del repositorio oficial
+runs/rtdetr_nativo/summary/
