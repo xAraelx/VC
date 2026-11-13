@@ -16,9 +16,16 @@ Este repositorio contiene el cuaderno `VC_P4.ipynb`, que reúne las dos partes d
 1. [Estructura de la carpeta](#estructura-de-la-carpeta)
 2. [Recursos necesarios](#recursos-necesarios)
 3. [Tarea 1 — Detección y seguimiento](#tarea-1--detección-y-seguimiento-de-personas-vehículos-y-matrículas)
-   - [Dataset](#dataset-de-matrículas) · [Entrenamiento](#entrenamiento) · [RT-DETR sin Ultralytics](#rt-detr-sin-ultralytics-extra) · [Comparativa de detectores](#comparativa-de-los-tres-detectores-extra) · [Pipeline de vídeo](#pipeline-de-vídeo) · [Flujo](#extra-flujo-por-direcciones) · [Anonimización](#extra-anonimización)
+   - [Dataset](#dataset-de-matrículas) 
+   - [Entrenamiento](#entrenamiento) 
+   - [RT-DETR sin Ultralytics](#rt-detr-sin-ultralytics-extra) 
+   - [Comparativa de detectores](#comparativa-de-los-tres-detectores-extra) 
+   - [Pipeline de vídeo](#pipeline-de-vídeo) 
+   - [Flujo](#extra-flujo-por-direcciones) 
+   - [Anonimización](#extra-anonimización)
 4. [Tarea 2 — OCR](#tarea-2--reconocimiento-de-caracteres-en-las-matrículas)
-   - [OCR](#ocr) · [Comparativa Tesseract vs PaddleOCR-VL](#comparativa-tesseract-vs-paddleocr-vl)
+   - [OCR](#ocr) 
+   - [Comparativa Tesseract vs PaddleOCR-VL](#comparativa-tesseract-vs-paddleocr-vl)
 5. [Referencias](#referencias)
 
 ------
@@ -51,7 +58,9 @@ P4
     |- comparativa_ocr/            #Tablas y gráficas de Tesseract vs PaddleOCR-VL
 ```
 
-El vídeo de test (`C0142.MP4`), los vídeos de resultado y los pesos que se descargan solos (`yolo11s.pt`, `rtdetr-l.pt`, `weights/`) no se incluyen por su tamaño.
+El vídeo de test (`C0142.MP4`) y los pesos que se descargan solos (`yolo11s.pt`, `rtdetr-l.pt`, `weights/`) no se incluyen por su tamaño.
+
+Los vídeos de resultado se encuentran en este ![drive](sad)
 
 ## Recursos necesarios
 
@@ -71,7 +80,7 @@ Todos los tiempos de este README se han medido en este equipo:
 
 | Componente | Valor |
 |---|---|
-| SO | Windows 10 |
+| SO | Windows 11 |
 | CPU | AMD Ryzen 7 7735HS |
 | RAM | 32 GB |
 | GPU | NVIDIA GeForce RTX 4060 Laptop GPU (8 GB) |
@@ -89,7 +98,7 @@ Los modelos preentrenados no detectan matrículas, así que se ha entrenado un d
 
 La sección 1 del cuaderno convierte las anotaciones al formato de YOLO y reparte las imágenes al azar (semilla 42): **1581 imágenes (3584 matrículas) para entrenamiento y 395 (927 matrículas) para validación**. Los tres detectores usan exactamente este reparto; para el repositorio oficial se exporta además a formato COCO.
 
-Enlace al dataset: [PENDIENTE: enlace]
+Enlace al dataset: [DRIVE](https://drive.google.com/drive/folders/1RFd6sKH_QMQcpE_w5rWmy8rKiYUY5_SI)
 
 ### Entrenamiento
 
@@ -228,9 +237,9 @@ fotograma, tipo_objeto, confianza, identificador_tracking, x1, y1, x2, y2, matri
 **Resultado con el vídeo de test** (YOLO + PaddleOCR-VL):
 
 ![Vídeo resultado](results/yolo_paddle.gif)
-<!-- PENDIENTE: GIF de un fragmento del vídeo resultado -->
 
-Vídeo completo: [PENDIENTE: enlace]
+
+Vídeo completo se encuentra en el [DRIVE]()
 
 | Clase | Total |
 |---|---|
@@ -247,7 +256,6 @@ Se procesaron los 2832 fotogramas en 483 s (5,9 fps) y se leyeron 29 matrículas
 
 **Problemas observados:**
 - El total de coches es más alto que el número real de coches: cuando un coche queda tapado, o sale y vuelve a entrar, el tracker le da un ID nuevo y cuenta dos veces.
-- [PENDIENTE: otros problemas vistos en el vídeo]
 
 ### Extra: flujo por direcciones
 
@@ -272,9 +280,9 @@ Se genera un segundo vídeo en el que las personas y todas las matrículas se ta
 - Se trabaja sobre una copia del fotograma sin anotar, así que el vídeo principal no cambia.
 
 ![Vídeo anonimizado](results/yolo_paddle_anonimo.gif)
-<!-- PENDIENTE: GIF de un fragmento del vídeo anonimizado -->
 
-Vídeo completo: [PENDIENTE: enlace]
+
+Vídeo completo se encuentra en el [DRIVE]()
 
 ------
 
@@ -330,6 +338,11 @@ La sección 7 compara los dos OCR con las matrículas del dataset, cuyo texto re
 ![Acierto de los OCR](results/comparativa_ocr/acierto.png)
 
 ![Tiempos de los OCR](results/comparativa_ocr/tiempos.png)
+
+**Demostraciones de detección**
+
+![Demostraciones](results/comparativa_ocr/ejemplos.png)
+
 
 **Conclusiones:**
 - [PENDIENTE: cuál acierta más y con qué tipo de matrículas falla cada uno]
