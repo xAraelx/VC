@@ -60,7 +60,7 @@ P4
 
 El vídeo de test (`C0142.MP4`) y los pesos que se descargan solos (`yolo11s.pt`, `rtdetr-l.pt`, `weights/`) no se incluyen por su tamaño.
 
-Los vídeos de resultado se encuentran en este ![drive](sad)
+Los vídeos de resultado se encuentran en este [DRIVE](https://drive.google.com/drive/folders/1z3AbIQVJxg9jMuxpYFPb0yNetClAjz53?usp=sharing)
 
 ## Recursos necesarios
 
@@ -239,7 +239,7 @@ fotograma, tipo_objeto, confianza, identificador_tracking, x1, y1, x2, y2, matri
 ![Vídeo resultado](results/yolo_paddle.gif)
 
 
-Vídeo completo se encuentra en el [DRIVE]()
+Vídeo completo se encuentra en el [DRIVE](https://drive.google.com/drive/folders/1z3AbIQVJxg9jMuxpYFPb0yNetClAjz53?usp=sharing)
 
 | Clase | Total |
 |---|---|
@@ -282,7 +282,7 @@ Se genera un segundo vídeo en el que las personas y todas las matrículas se ta
 ![Vídeo anonimizado](results/yolo_paddle_anonimo.gif)
 
 
-Vídeo completo se encuentra en el [DRIVE]()
+Vídeo completo se encuentra en el [DRIVE](https://drive.google.com/drive/folders/1z3AbIQVJxg9jMuxpYFPb0yNetClAjz53?usp=sharing)
 
 ------
 
