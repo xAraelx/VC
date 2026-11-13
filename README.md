@@ -74,3 +74,27 @@ P3
 |- README.md                          #Descripción de la solución a las tareas
 |- VC_P3.ipynb                        #Cuaderno jupyter con tareas desarrolladas
 ```
+
+### [PRÁCTICA 4](https://github.com/xAraelx/VC/tree/main/P4)
+
+[Guía Practica 4](https://github.com/otsedom/otsedom.github.io/tree/main/VC/P4) · [Guía Practica 4b](https://github.com/otsedom/otsedom.github.io/tree/main/VC/P4b)
+
+En esta cuarta práctica se encuentran 2 tareas de detección y reconocimiento con modelos de aprendizaje profundo, desarrolladas dentro de un mismo cuaderno Jupyter:
+- **Tarea 1 (P4)**: detectar, seguir y contar personas, vehículos y matrículas en un vídeo. El detector de matrículas se entrena con el dataset de la asignatura de tres formas distintas (YOLO11n, RT-DETR con Ultralytics y RT-DETR con su repositorio oficial) y se comparan entre sí. Como extras, se cuenta el flujo por dirección de salida y se genera un vídeo anonimizado que tapa personas y matrículas con la imagen del mandril de la práctica 2.
+- **Tarea 2 (P4b)**: leer el texto de las matrículas y comparar un OCR clásico (Tesseract) con un modelo de lenguaje visual (PaddleOCR-VL) en acierto y tiempo.
+
+Además del cuaderno, en la carpeta se encuentran las configuraciones de los trackers, las curvas de los entrenamientos y los resultados (CSV, gráficas y gifs). Los vídeos de resultado, los pesos entrenados y el dataset están enlazados en un Drive por su tamaño.
+
+Para la realización de dichas tareas, se incluye en la carpeta de esta práctica un README donde se desarrolla el proceso de realización de cada tarea.
+
+Estructura de la carpeta
+```
+P4
+|- load_rtdetr.py                  #Carga de los modelos del repositorio oficial de RT-DETR
+|- README.md                       #Descripción de la solución a las tareas
+|- tracker_general.yaml            #Configuración del tracker de personas y vehículos
+|- tracker_matriculas.yaml         #Configuración del tracker de matrículas
+|- VC_P4.ipynb                     #Cuaderno jupyter con tareas desarrolladas
+|- runs/                           #Curvas y configuración de los entrenamientos de los tres detectores
+|- results/                        #Resultados del vídeo (CSV y gifs) y comparativas de detectores y OCR
+```
